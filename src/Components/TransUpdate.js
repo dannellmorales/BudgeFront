@@ -26,7 +26,7 @@ function TransUpdate() {
   useEffect(()=>{
     axios.get(`${API}/transactions/${index}`)
    .then((res)=> setEditTrans(res.data))
-  }, [])
+  }, [index])
 
   const editTransaction = () => {
     axios.put(`${API}/transactions/${index}`, editTrans)

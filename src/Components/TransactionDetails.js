@@ -17,8 +17,8 @@ function TransactionDetails() {
         setTransaction(response.data)
         console.log(response.data)
       })
-      .catch((error) => navigate("/i_re_loaded"));
-  }, [index]);
+      .catch((error) => navigate("/"));
+  }, [index, navigate]);
 
   const handleDelete = () => {
     axios
