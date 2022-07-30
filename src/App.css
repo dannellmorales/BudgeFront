@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +36,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+      "n n n "
+      "t t t "
+      "t t t "
+      "t t t "
+      "t t t "
+      "t t t "
+      
+}
+
+nav {
+  grid-area: n;
+  display: flex;
+  text-align: center;
+  background-color: red ;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bugTitle{
+  grid-area: n;
+  font-size: 60px;
+  text-decoration: none;
+}
+.trans{
+  grid-area: t;
+  display: flex;
 }

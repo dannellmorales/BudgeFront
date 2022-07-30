@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home';
+import Nav from './Components/Nav';
+import Transactions from './Components/Transactions';
+import NewTransForm from './Components/NewTransForm';
+import TransUpdate from './Components/TransUpdate';
+import TransactionDetails from './Components/TransactionDetails';
+
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="grid">
+      <Router>
+      <Nav />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/transactions/new" element={<NewTransForm />} />
+        <Route path="/transactions/:index/edit" element={<TransUpdate />} />
+        <Route path="/transactions/:index" element={<TransactionDetails />} />
+      </Routes>
+      </Router>
     </div>
   );
 }
