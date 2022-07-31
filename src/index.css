@@ -8,6 +8,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+ background-image: url("https://photos.google.com/share/AF1QipP5c_2F1RFtVHKa-wZXvOZ_0upqjQaqwqnH9s4E4HUbYSp_Z1ms3qU-52zgIrTPtw/photo/AF1QipO-RZ2B0j3v64aSC8ykz1jRjYWAz7-HlyEdfNLJ?key=Y012N3FGYVMydlNHVF9EWHBqenRfaEQ2M2x5UVp3");
+ background-color: #cccccc;
+ background-repeat: no-repeat;
+ background-size: 100% 100
+ 
 }
 
 code {

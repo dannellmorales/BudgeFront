@@ -37,6 +37,7 @@ function NewTransForm() {
       <form onSubmit={handleSubmit}>
 
         <label htmlFor="name">Name:</label>
+        <br/>
         <input
           id="item_name"
           value={newTrans.item_name}
@@ -45,8 +46,9 @@ function NewTransForm() {
           placeholder="Enter Name"
           required
         />
-
+      <br/>
         <label htmlFor="amount">Amount:</label>
+      <br/>
         <input
           id="amount"
           value={newTrans.amount}
@@ -55,8 +57,9 @@ function NewTransForm() {
           placeholder="Enter Amount"
           required
         />
-
+      <br/>
         <label htmlFor="date">Date:</label>
+      <br/>
         <input
           id="date"
           value={newTrans.date}
@@ -65,7 +68,9 @@ function NewTransForm() {
           placeholder="Enter Date"
           required
         />
+        <br/>
         <label htmlFor="from">from:</label>
+        <br/>
         <input
           id="from"
           value={newTrans.from}

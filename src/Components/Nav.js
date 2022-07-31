@@ -4,9 +4,9 @@ function Nav() {
   return (
 
     <div className="Nav">
-      <Link to="/" className="bugTitle">Budget App</Link>
-      <Link to="/transactions" className="but"><button>Transactions</button></Link>
-      <Link to="/transactions/new" className="but"><button>New Transactions</button></Link>
+      <Link to="/" className="bugTitle"><h1>Budget App</h1></Link>
+      <Link to="/transactions"><button>Transactions</button></Link>
+      <Link to="/transactions/new"><button>New Transactions</button></Link>
      
       
     </div>
