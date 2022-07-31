@@ -5,6 +5,8 @@ import Transactions from './Components/Transactions';
 import NewTransForm from './Components/NewTransForm';
 import TransUpdate from './Components/TransUpdate';
 import TransactionDetails from './Components/TransactionDetails';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
